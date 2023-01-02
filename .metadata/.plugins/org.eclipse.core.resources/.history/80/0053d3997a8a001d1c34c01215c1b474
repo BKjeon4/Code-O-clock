@@ -1,0 +1,12 @@
+package com.example.service;
+
+import com.example.domain.MemberVO;
+
+public interface UserService {
+
+	void insertMember(MemberVO vo);
+
+	// id 중복 체크
+	// public MemberVO checkId(MemberVO vo);
+
+}
