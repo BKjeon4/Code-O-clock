@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Code O&apos;clock\FinalProject"/>
 			<item value="D:\CodeOClock\FinalProject"/>
 		</list>
 		<list key="projectNameTemplate">
