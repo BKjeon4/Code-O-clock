@@ -36,7 +36,7 @@
                <div class="loading-content">
                   <img class="loading-logo-text" src="assets/img/logo/logo-text-2.png" alt="">
                   <div class="loading-stroke">
-                     <img class="loading-logo-icon" src="assets/img/logo/logo-icon.gif" alt="">
+                     <img class="loading-logo-icon" src="assets/img/logo/logo-icon.png" alt="">
                   </div>
                </div>
             </div>

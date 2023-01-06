@@ -39,7 +39,7 @@
                     <div class="loading-content">
                         <img class="loading-logo-text" src="assets/img/logo/logo-text-2.png" alt="" />
                         <div class="loading-stroke">
-                            <img class="loading-logo-icon" src="assets/img/logo/logo-icon.png" alt="" />
+                            <img class="loading-logo-icon" src="assets/img/logo/logo-icon.gif" alt="" />
                         </div>
                     </div>
                 </div>
@@ -360,7 +360,7 @@
                                         <div class="sign__input-wrapper mb-25">
                                             <h5>ID</h5>
                                             <div class="sign__input">
-                                                <input type="text" placeholder="ID" id="m_id" name="MId" required/>                                                
+                                                <input type="text" placeholder="ID" id="m_id" name="memId" required/>                                                
                                                 <i class="fal fa-user"></i>                                                
                                             </div>
                                             <!-- 유효성검사 js 연결(아이디) -->
@@ -372,7 +372,7 @@
                                         <div class="sign__input-wrapper mb-25">
                                             <h5>Password</h5>
                                             <div class="sign__input">
-                                                <input type="password" placeholder="Password" id="m_pass" name="MPass" required/>
+                                                <input type="password" placeholder="Password" id="m_pass" name="memPass" required/>
                                                 <i class="fal fa-lock"></i>
                                             </div>
                                             <!-- 유효성검사 js 연결(비밀번호)-->
@@ -391,7 +391,7 @@
                                         <div class="sign__input-wrapper mb-25">
                                             <h5>Full Name</h5>
                                             <div class="sign__input">
-                                                <input type="text" placeholder="Full name" id="m_name" name="m_name" required/>
+                                                <input type="text" placeholder="Full name" id="m_name" name="memName" required/>
                                                 <i class="fal fa-user"></i>
                                             </div>
                                             <!-- 유효성검사 js 연결(이름)-->
@@ -401,7 +401,7 @@
                                         <div class="sign__input-wrapper mb-25">
                                             <h5>Phone Number</h5>
                                             <div class="sign__input">
-                                                <input type="tel" placeholder="Phone number" id="m_tel" name="m_tel" required/>
+                                                <input type="tel" placeholder="Phone number" id="m_tel" name="memTel" required/>
                                                 <i class="fal fa-phone"></i>
                                             </div>
                                             <!-- 유효성검사 js 연결(폰번호)-->
@@ -411,7 +411,7 @@
                                         <div class="sign__input-wrapper mb-25">
                                             <h5>E-mail</h5>
                                             <div class="sign__input">
-                                                <input type="email" placeholder="E-mail address" id="m_email" name="m_email" required/>
+                                                <input type="email" placeholder="E-mail address" id="m_email" name="memEmail" required/>
                                                 <i class="fal fa-envelope"></i>
                                             </div>
                                             <!-- 유효성검사 js 연결(이메일)-->
