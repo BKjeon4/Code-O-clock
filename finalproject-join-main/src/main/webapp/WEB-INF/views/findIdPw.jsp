@@ -324,7 +324,7 @@
 
       </div>
                   
-      <input class="input" id="reg_id" name='memId' type="text" placeholder="아이디"  required="required"/>
+      <input class="input" id="reg_id" name='memIdString' type="text" placeholder="아이디"  required="required"/>
       <br/>
       <input class="input" id="reg_email" name='memEmail' type="email" placeholder="이메일" required="required"/>
 

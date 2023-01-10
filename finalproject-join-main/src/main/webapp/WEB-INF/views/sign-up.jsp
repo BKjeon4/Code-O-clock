@@ -360,7 +360,7 @@
                                         <div class="sign__input-wrapper mb-25">
                                             <h5>ID</h5>
                                             <div class="sign__input">
-                                                <input type="text" placeholder="ID" id="m_id" name="memId" required/>                                                
+                                                <input type="text" placeholder="ID" id="m_idstring" name="memIdString" required/>                                                
                                                 <i class="fal fa-user"></i>                                                
                                             </div>
                                             <!-- 유효성검사 js 연결(아이디) -->
@@ -594,7 +594,8 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/jquery-3.6.3.min.js"></script>
         <script src="assets/js/sign-up.js"></script>
-        <!-- Address API -->
+        
+        <!-- 카카오 주소 Address API -->
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
    
    <script type="text/javascript">

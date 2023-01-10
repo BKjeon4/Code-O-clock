@@ -58,7 +58,7 @@
             left: 0;
             width: 100%;
             background: $white;
-            z-index: 99;
+            z-index: 100000;
             animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
             -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
             display: block;
