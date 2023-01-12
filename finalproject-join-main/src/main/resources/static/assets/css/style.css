@@ -8199,7 +8199,7 @@ p.checkout-coupon input[type=text]:focus {
   border-radius: 6px;
   position: relative;
   line-height: 52px;
-  padding-left: 23px;
+  padding-left: 15px;
   z-index: 1;
   overflow: hidden;
   font-size: 16px;
@@ -8215,7 +8215,7 @@ p.checkout-coupon input[type=text]:focus {
   transform: translateY(-50%);
   height: 220px;
   width: 220px;
-  background: #3360bd;
+  background: #FFE90A;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;

@@ -347,12 +347,7 @@
                     <div class="row">
                         <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                             <div class="sign__wrapper white-bg">
-                                <div class="sign__header mb-35">
-                                    <div class="sign__in text-center">
-                                        <a href="#" class="sign__social g-plus text-start mb-15"><i class="fab fa-google-plus-g"></i>Sign Up with Google</a>
-                                        <p><span>........</span> Or, <a href="sign-up">sign up</a> with your account<span> ........</span></p>
-                                    </div>
-                                </div>
+                                
                                 
                                 <div class="sign__form">
                                     <!-- bk 회원가입 버튼 액션-->
@@ -360,7 +355,7 @@
                                         <div class="sign__input-wrapper mb-25">
                                             <h5>ID</h5>
                                             <div class="sign__input">
-                                                <input type="text" placeholder="ID" id="m_idstring" name="memIdString" required/>                                                
+                                                <input type="text" placeholder="ID" id="memIdString" name="memIdString" required/>                                                
                                                 <i class="fal fa-user"></i>                                                
                                             </div>
                                             <!-- 유효성검사 js 연결(아이디) -->

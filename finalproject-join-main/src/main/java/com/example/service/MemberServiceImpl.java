@@ -25,7 +25,6 @@ import javax.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.domain.MemberKakaoDTO;
 import com.example.domain.MemberVO;
 import com.example.persistence.MemberRepository;
 import com.google.gson.JsonElement;
@@ -44,9 +43,9 @@ public class MemberServiceImpl implements MemberService {
 		memberRepository.save(vo);
 	}
 
-	// 로그인
+	// 로그인 
 	@Override
-	public List<MemberVO> loginMember(MemberVO vo) {
+	public MemberVO loginMember(MemberVO vo) {
 		return memberRepository.findByMemIdStringAndMemPass(vo.getMemIdString(), vo.getMemPass());
 	}
 
@@ -131,9 +130,9 @@ public class MemberServiceImpl implements MemberService {
 		return str;
 	}
 
-	// 아이디로 회원 정보 찾기
-	public MemberVO findByMemIdString(MemberVO vo) {
-		return memberRepository.findByMemIdString(vo.getMemIdString());
+	// 아이디와 이메일로 회원 정보 찾기
+	public MemberVO findByMemIdStringAndMemEmail(MemberVO vo) {
+		return memberRepository.findByMemIdStringAndMemEmail(vo.getMemIdString(), vo.getMemEmail());
 
 	}
 
@@ -195,8 +194,8 @@ public class MemberServiceImpl implements MemberService {
 		}
 		return access_Token;
 	}
-		
-		public MemberKakaoDTO getUserInfo(String access_Token) {
+
+	public MemberVO getUserInfo(String access_Token) {
 		// 요청하는 클라이언트마다 가진 정보가 다를 수 있기에 HashMap타입으로 선언
 		HashMap<String, Object> userInfo = new HashMap<String, Object>();
 		String reqURL = "https://kapi.kakao.com/v2/user/me";
@@ -244,12 +243,14 @@ public class MemberServiceImpl implements MemberService {
 
 		System.out.println(nickname + ", " + email);
 
-		MemberKakaoDTO result2 = memberRepository.findkakao(nickname, email);
+		MemberVO result2 = memberRepository.findkakao(nickname, email);
 		// 위 코드는 먼저 정보가 저장되있는지 확인하는 코드.
 		System.out.println("정보 저장 확인:" + result2);
 		if(result2==null) {
+			System.out.println("null이어서 계정을 저장");
 			// result가 null이면 정보가 저장이 안되있는거므로 정보를 저장.
-			memberRepository.kakaoinsert(nickname, email);
+			Integer r1 = memberRepository.kakaoinsert(nickname, email);
+			System.out.println("kakaoInsert 됐나? : " + r1);
 			// 위 코드가 정보를 저장하기 위해 Repository로 보내는 코드임.
 			return memberRepository.findkakao(nickname, email);
 			// 위 코드는 정보 저장 후 컨트롤러에 정보를 보내는 코드임.
@@ -261,15 +262,18 @@ public class MemberServiceImpl implements MemberService {
 
 	}
 
-//	public static <K, V> K getKey(Map<K, V> map, V value) {
-//
-//		for (K key : map.keySet()) {
-//			if (value.equals(map.get(key))) {
-//				return key;
-//			}
-//		}
-//		return null;
-//	}
+	// 회원정보 가져오기
+	public MemberVO findByMemIdString(MemberVO vo) {
+		return memberRepository.findByMemIdString(vo.getMemIdString());
+				
+	}
+	
+	// 회원정보 수정
+	public MemberVO updateMember(MemberVO vo) {
+		MemberVO result = memberRepository.save(vo);
+		System.out.println("서비스" + result);
+		return result;
+	}
 
 }
 

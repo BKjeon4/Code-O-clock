@@ -39,6 +39,7 @@ public class MemberVO {
    @Column(nullable=false, name="m_email")
    private String memEmail;
    private String m_profile;
+   private String m_delete;
    
    private LocalDateTime p_end_date;
    private Integer p_daysperweek;
