@@ -27,14 +27,41 @@ public interface EducationRepository extends CrudRepository<EducationVO, Integer
       @Query(value="SELECT *  "
             + "FROM education "
             + "WHERE lower(ed_title) LIKE CONCAT('%',?1,'%')"
-            + "OR ed_name LIKE CONCAT('%',?1,'%')"  ,
+            + "OR lower(ed_name) LIKE CONCAT('%',?1,'%')"
+            + "OR lower(ed_keyword) LIKE CONCAT('%',?1,'%') " 
+            + "ORDER BY ed_days DESC",
             countQuery="SELECT count(*)  "
                    + "FROM education "
                    + "WHERE lower(ed_title) LIKE CONCAT('%',?1,'%')"
-                   + "OR ed_name LIKE CONCAT('%',?1,'%') ",
-                   //+ "ORDER BY ed_days DESC",
+                   + "OR lower(ed_name) LIKE CONCAT('%',?1,'%') "
+                   + "OR lower(ed_keyword) LIKE CONCAT('%',?1,'%') "  
+                   + "ORDER BY ed_days DESC",
             nativeQuery=true)
       Page<EducationVO> AllSearchAndPagingQuery(Pageable paging, 
-            String keywords);
-     
+            String keywords, String order);
+      
+      
+      
+      @Query(value="SELECT *  "
+              + "FROM education "
+              + "WHERE lower(ed_title) LIKE CONCAT('%',?1,'%')"
+              + "OR lower(ed_name) LIKE CONCAT('%',?1,'%')"
+              + "OR lower(ed_keyword) LIKE CONCAT('%',?1,'%') " 
+              + "ORDER BY avg DESC",
+              countQuery="SELECT count(*)  "
+                     + "FROM education "
+                     + "WHERE lower(ed_title) LIKE CONCAT('%',?1,'%')"
+                     + "OR lower(ed_name) LIKE CONCAT('%',?1,'%') "
+                     + "OR lower(ed_keyword) LIKE CONCAT('%',?1,'%') "  
+                     + "ORDER BY avg DESC",
+              nativeQuery=true)
+        Page<EducationVO> starDesc(Pageable paging, 
+              String keywords, String order);
+        
+      
+      
+    
+      
+      
+
 }

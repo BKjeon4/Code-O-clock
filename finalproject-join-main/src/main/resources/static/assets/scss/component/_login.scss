@@ -20,7 +20,6 @@
             padding-bottom: 25px;
         }
     }
-   
     &__shape{
         & img{
             position: absolute;
@@ -266,7 +265,7 @@
             @include transform(translateY(-50%));
             height: 220px;
             width: 220px;
-            /*background: black;*/
+            background: #3360bd;
             @include border-radius(50%);
             z-index: -1;
             @media #{$xs}{

@@ -1,9 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!doctype html>
 <html class="no-js" lang="zxx">
    <head>
-      <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>랭킹페이지</title>
@@ -24,6 +24,7 @@
       <link rel="stylesheet" href="/assets/css/elegantFont.css">
       <link rel="stylesheet" href="/assets/css/default.css">
       <link rel="stylesheet" href="/assets/css/style.css">
+      <link rel="stylesheet" href="/assets/css/onoff.css">
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -57,9 +58,11 @@
 
       <!-- header area start -->
       <header>
-         <div id="header-sticky" class="header__area header__transparent header__padding">
+         <div id="header-sticky" class="header__area header__transparent header__padding header__white">
             <div class="container-fluid">
                <div class="row align-items-center">
+
+                  <!--로고와 사이트 전환 이미지-->
                   <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
                      <div class="header__left d-flex">
                         <div class="logo">
@@ -73,115 +76,174 @@
                                  <li>
                                     <a href="course-grid" class="cat-menu d-flex align-items-center">
                                        <div class="cat-dot-icon d-inline-block">
-                                          <svg viewBox="0 0 276.2 276.2">
-                                             <g>
-                                                <g>
-                                                   <path class="cat-dot" d="M33.1,2.5C15.3,2.5,0.9,17,0.9,34.8s14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S51,2.5,33.1,2.5z"/>
-                                                   <path class="cat-dot" d="M137.7,2.5c-17.8,0-32.3,14.5-32.3,32.3s14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3S155.5,2.5,137.7,2.5    z"/>
-                                                   <path class="cat-dot" d="M243.9,67.1c17.8,0,32.3-14.5,32.3-32.3S261.7,2.5,243.9,2.5S211.6,17,211.6,34.8S226.1,67.1,243.9,67.1z"/>
-                                                   <path class="cat-dot" d="M32.3,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3S0,120.4,0,138.2S14.5,170.5,32.3,170.5z"/>
-                                                   <path class="cat-dot" d="M136.8,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3c-17.8,0-32.3,14.5-32.3,32.3    C104.5,156.1,119,170.5,136.8,170.5z"/>
-                                                   <path class="cat-dot" d="M243,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3s-32.3,14.5-32.3,32.3    C210.7,156.1,225.2,170.5,243,170.5z"/>
-                                                   <path class="cat-dot" d="M33,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S50.8,209.1,33,209.1z    "/>
-                                                   <path class="cat-dot" d="M137.6,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S155.4,209.1,137.6,209.1z"/>
-                                                   <path class="cat-dot" d="M243.8,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S261.6,209.1,243.8,209.1z"/>
-                                                </g>
-                                             </g>
+                                        
+                                          <input type="checkbox" id="switch" /><label class="onoff" for="switch">Toggle</label>
+
+                                       </div>
+                                   
+                                    </a>
+                                    
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- JSTL if : 로그인, 로그아웃된 상태 구분-->
+                  <c:choose>
+							<c:when test="${empty sessionScope.memIdInt}">
+
+                        <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7 col-sm-6 col-6">
+                           <div class="eader__center align-items-center d-flex justify-content-center">
+                              <div class="main-menu main-menu-3">
+                                 <nav id="mobile-menu">
+                                    <ul>
+                                       <li class="has-dropdown">
+                                          <a>About</a>
+                                          <ul class="submenu">
+                                             <li><a href="/about">로고 소개</a></li>
+                                             <li><a href="/map">지도</a></li>
+                                          </ul>
+                                       </li>
+                                       <li class="has-dropdown">
+                                          <a>학원</a>
+                                          <ul class="submenu">
+                                             <li><a href="/academy/course-sidebar">학원 목록</a></li>
+                                             <li><a href="/academy/rank">학원 랭크</a></li>
+                                          </ul>
+                                       </li>
+                                       <li class="has-dropdown">
+                                          <a>게시판</a>
+                                          <ul class="submenu">
+                                             <li><a href="/board/honestQuestionList">솔직 답변</a></li>
+                                             <li><a href="/board/codingBoard">코딩 게시판</a></li>
+                                             <li><a href="/board/newsList">뉴스</a></li>
+                                             <li><a href="/board/announcement">공지</a></li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="/chatbot">챗봇</a>
+                                       </li>
+                                    </ul>
+                                 </nav>
+                              </div>
+                              <div class="header__search p-relative ml-50 d-none d-md-block">
+                                 <form action="#">
+                                    <input type="text" placeholder="Search...">
+                                    <button type="submit"><i class="fad fa-search"></i></button>
+                                 </form>
+                                 <div class="header__cart">
+                                    <a href="javascript:void(0);" class="cart-toggle-btn">
+                                       <div class="header__cart-icon">
+                                          <svg viewBox="0 0 24 24">
+                                             <circle class="st0" cx="9" cy="21" r="1"/>
+                                             <circle class="st0" cx="20" cy="21" r="1"/>
+                                             <path class="st0" d="M1,1h4l2.7,13.4c0.2,1,1,1.6,2,1.6h9.7c1,0,1.8-0.7,2-1.6L23,6H6"/>
                                           </svg>
                                        </div>
-                                       <span>Category</span>
+                                       <span class="cart-item">2</span>
                                     </a>
-                                    <ul class="cat-submenu">
-                                       <li><a href="course-details">English Learning</a></li>
-                                       <li><a href="course-details">Web Development</a></li>
-                                       <li><a href="course-details">Logo Design</a></li>
-                                       <li><a href="course-details">Motion Graphics</a></li>
-                                       <li><a href="course-details">Video Edition</a></li>
-                                    </ul>
-                                 </li>
-                              </ul>
-                           </nav>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6">
-                     <div class="header__right d-flex justify-content-end align-items-center">
-                        <div class="main-menu">
-                           <nav id="mobile-menu">
-                              <ul>
-                                 <li class="has-dropdown">
-                                    <a href="index">Home</a>
-                                    <ul class="submenu">
-                                       <li><a href="index">Home Style 1</a></li>
-                                       <li><a href="index-2">Home Style 2</a></li>
-                                       <li><a href="index-3">Home Style 3</a></li>
-                                    </ul>
-                                 </li>
-                                 <li class="has-dropdown">
-                                    <a href="course-grid">Courses</a>
-                                    <ul class="submenu">
-                                       <li><a href="course-grid">Courses</a></li>
-                                       <li><a href="course-list">Course List</a></li>
-                                       <li><a href="course-sidebar">Course sidebar</a></li>
-                                       <li><a href="course-details">Course Details</a></li>
-                                    </ul>
-                                 </li>
-                                 <li class="has-dropdown">
-                                    <a href="blog">Blog</a>
-                                    <ul class="submenu">
-                                       <li><a href="blog">Blog</a></li>
-                                       <li><a href="blog-details">Blog Details</a></li>
-                                    </ul>
-                                 </li>
-                                 <li class="has-dropdown">
-                                    <a href="course-grid">Pages</a>
-                                    <ul class="submenu">
-                                       <li><a href="about">About</a></li>
-                                       <li><a href="instructor">Instructor</a></li>
-                                       <li><a href="instructor-details">Instructor Details</a></li>
-                                       <li><a href="event-details">Event Details</a></li>
-                                       <li><a href="cart">My Cart</a></li>
-                                       <li><a href="wishlist">My Wishlist</a></li>
-                                       <li><a href="checkout">checkout</a></li>
-                                       <li><a href="sign-in">Sign In</a></li>
-                                       <li><a href="sign-up">Sign Up</a></li>
-                                       <li><a href="error">Error</a></li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="contact">Contact</a></li>
-                              </ul>
-                           </nav>
-                        </div>
-                        <div class="header__search p-relative ml-50 d-none d-md-block">
-                           <form action="#">
-                              <input type="text" placeholder="Search...">
-                              <button type="submit"><i class="fad fa-search"></i></button>
-                           </form>
-                           <div class="header__cart">
-                              <a href="javascript:void(0);" class="cart-toggle-btn">
-                                 <div class="header__cart-icon">
-                                    <svg viewBox="0 0 24 24">
-                                       <circle class="st0" cx="9" cy="21" r="1"/>
-                                       <circle class="st0" cx="20" cy="21" r="1"/>
-                                       <path class="st0" d="M1,1h4l2.7,13.4c0.2,1,1,1.6,2,1.6h9.7c1,0,1.8-0.7,2-1.6L23,6H6"/>
-                                    </svg>
                                  </div>
-                                 <span class="cart-item">2</span>
-                              </a>
+                              </div>
+                              <div class="header__btn ml-20 d-none d-sm-block">
+                                 <a href="/sign-in" class="e-btn">로그인</a>
+                              </div>
+                              <div class="sidebar__menu d-xl-none">
+                                 <div class="sidebar-toggle-btn ml-30" id="sidebar-toggle">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="header__btn ml-20 d-none d-sm-block">
-                           <a href="contact" class="e-btn">Try for free</a>
-                        </div>
-                        <div class="sidebar__menu d-xl-none">
-                           <div class="sidebar-toggle-btn ml-30" id="sidebar-toggle">
-                               <span class="line"></span>
-                               <span class="line"></span>
-                               <span class="line"></span>
+
+                     </c:when>
+							<c:when test="${not empty sessionScope.memIdInt}">
+
+                        <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7 col-sm-6 col-6">
+                           <div class="eader__center align-items-center d-flex justify-content-center">
+                              <div class="main-menu main-menu-3">
+                                 <nav id="mobile-menu">
+                                    <ul>
+                                       <li class="has-dropdown">
+                                          <a>About</a>
+                                          <ul class="submenu">
+                                             <li><a href="/about">로고 소개</a></li>
+                                             <li><a href="/map">지도</a></li>
+                                          </ul>
+                                       </li>
+                                       <li class="has-dropdown">
+                                          <a>학원</a>
+                                          <ul class="submenu">
+                                             <li><a href="/academy/course-sidebar">학원 목록</a></li>
+                                             <li><a href="/academy/rank">학원 랭크</a></li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="course-sidebar">학원</a>
+                                       </li>
+                                       <li class="has-dropdown">
+                                          <a>게시판</a>
+                                          <ul class="submenu">
+                                             <li><a href="/board/honestQuestionList">솔직 답변</a></li>
+                                             <li><a href="/board/codingBoard">코딩 게시판</a></li>
+                                             <li><a href="/board/newsList">뉴스</a></li>
+                                             <li><a href="/board/announcement">공지</a></li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="/chatbot">챗봇</a>
+                                       </li>
+                                    </ul>
+                                 </nav>
+                              </div>
+                              <!-- 0103 찬주2
+                                 메인화면에서의 검색기능과 동일한 부분 
+                              -->
+
+                              <div class="header__search p-relative ml-50 d-none d-md-block">
+
+                                 <form id = "main" action=/academy/course-sidebar method="GET">
+                                    <input type="text" name ="keywords"  placeholder="ex)교육과정 및 학원이름 검색">
+                                    <button type="submit"><i class="fad fa-search"></i></button>
+                                 </form>
+                                 <!-- 검색 끝-->
+
+
+
+
+                                 <div class="header__cart">
+                                    <a href="javascript:void(0);" class="cart-toggle-btn">
+                                       <div class="header__cart-icon">
+                                          <svg viewBox="0 0 24 24">
+                                             <circle class="st0" cx="9" cy="21" r="1"/>
+                                             <circle class="st0" cx="20" cy="21" r="1"/>
+                                             <path class="st0" d="M1,1h4l2.7,13.4c0.2,1,1,1.6,2,1.6h9.7c1,0,1.8-0.7,2-1.6L23,6H6"/>
+                                          </svg>
+                                       </div>
+                                       <span class="cart-item">2</span>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="header__btn ml-20 d-none d-sm-block">
+                                 <a href="/logoutMember" class="e-btn">로그아웃</a>
+                              </div>
+                              <div class="sidebar__menu d-xl-none">
+                                 <div class="sidebar-toggle-btn ml-30" id="sidebar-toggle">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                 </div>
+                              </div>
                            </div>
-                       </div>
-                     </div>
-                  </div>
+                        </div>
+
+                     </c:when>
+						</c:choose>
+                  <!-- JSTL c:when 끝-->
+
                </div>
             </div>
          </div>
@@ -325,7 +387,7 @@
                <div class="row">
                   <div class="col-xxl-6 offset-xxl-3">
                      <div class="section__title-wrapper text-center mb-60">
-                        <h2 class="section__title">이달의
+                        <h2 class="section__title">
                            <span class="yellow-bg yellow-bg-big">부트캠프 랭킹<img src="/assets/img/shape/yellow-bg.png" alt=""></span>
                         </h2>
                         <p>You don't have to struggle alone, you've got our assistance and help.</p>
@@ -333,117 +395,26 @@
                   </div>
                </div>
                <div class="row">
+                  <c:forEach items="${rank}" var="rank">
                   <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                      <div class="blog__item white-bg mb-30 transition-3 fix">
                         <div class="blog__thumb w-img fix">
-                           <a href="blog-details.html">
-                              <img src="/assets/img/blog/blog-1.jpg" alt="" width='100' height='260'>
+                           <a href="#">
+                              <!--sql 첫번쨰 인덱스를 출력, 해당 사진 -->
+                              <img src="/assets/img/course/${rank[1]}" alt="" width='100' height='260'>
                            </a>
                         </div>
                         <div class="blog__content">
-                           <div class="blog__tag">
-                              <a href="#">Art &amp; Design</a>
-                           </div>
-                           <h3 class="blog__title"><a href="blog-details.html">The Challenge Of Global Learning In Public Education</a></h3>
-
+                           <!--sql 첫번쨰 인덱스를 출력, 해당 학원이름 -->
+                           <h3 class="blog__title"><a href="#">${rank[0]}</a></h3>
                            <div class="blog__meta d-flex align-items-center justify-content-between">
                               <div class="blog__author d-flex align-items-center">
-                                 <div class="blog__author-thumb mr-10">
-                                    <img src="/assets/img/blog/author/author-1.jpg" alt="">
-                                 </div>
-                                 <div class="blog__author-info">
-                                    <h5>Jim Séchen</h5>
-                                 </div>
+                                 <span><i class="icon_star"></i></span>
+                                 <!--sql 첫번쨰 인덱스를 출력, 해당 학원 후기 평균낸 점수 -->
+                                 <div>${rank[3]}</div>
                               </div>
                               <div class="blog__date d-flex align-items-center">
-                                 <i class="fal fa-clock"></i>
-                                 <span>April 02, 2022</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                     <div class="blog__item white-bg mb-30 transition-3 fix">
-                        <div class="blog__thumb w-img fix">
-                           <a href="blog-details.html">
-                              <img src="/assets/img/blog/blog-2.jpg" alt="" width='100' height='260'>
-                           </a>
-                        </div>
-                        <div class="blog__content">
-                           <div class="blog__tag">
-                              <a href="#" class="purple">Marketing</a>
-                           </div>
-                           <h3 class="blog__title"><a href="blog-details.html">Exactly How Technology Can Make Reading Better</a></h3>
-
-                           <div class="blog__meta d-flex align-items-center justify-content-between">
-                              <div class="blog__author d-flex align-items-center">
-                                 <div class="blog__author-thumb mr-10">
-                                    <img src="/assets/img/blog/author/author-2.jpg" alt="">
-                                 </div>
-                                 <div class="blog__author-info">
-                                    <h5>Barry Tone</h5>
-                                 </div>
-                              </div>
-                              <div class="blog__date d-flex align-items-center">
-                                 <i class="fal fa-clock"></i>
-                                 <span>July 02, 2022</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
-                     <div class="blog__item white-bg mb-30 transition-3 fix">
-                        <div class="blog__thumb w-img fix">
-                           <a href="blog-details.html">
-                              <img src="/assets/img/blog/blog-3.jpg" alt="" width='100' height='260'>
-                           </a>
-                        </div>
-                        <div class="blog__content">
-                           <div class="blog__tag">
-                              <a href="#" class="pink">UX Design</a>
-                           </div>
-                           <h3 class="blog__title"><a href="blog-details.html">New Chicago school budget relies on state pension</a></h3>
-
-                           <div class="blog__meta d-flex align-items-center justify-content-between">
-                              <div class="blog__author d-flex align-items-center">
-                                 <div class="blog__author-thumb mr-10">
-                                    <img src="/assets/img/blog/author/author-3.jpg" alt="">
-                                 </div>
-                                 <div class="blog__author-info">
-                                    <h5>Barry Tone</h5>
-                                 </div>
-                              </div>
-                              <div class="blog__date d-flex align-items-center">
-                                 <i class="fal fa-clock"></i>
-                                 <span>July 02, 2022</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <!-- 4위부터 아래부분 -->
-               <br/>
-               <div class="container">
-                  
-                  <div class="row">
-                     <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
-                        <div class="events__item mb-10 hover__active">
-                           <div class="events__item-inner d-sm-flex align-items-center justify-content-between white-bg" style="margin-left: -11%; margin-right: -11%;">
-                              <div class="events__content">
-                                 <h4>4</h4>
-                                 <div class="events__meta">
-                                    <span>자바, 파이썬</span>
-                                    <span>1월 6일 ~ 1월 30일</span>
-                                    <span>한국소프트웨어인재개발원</span>
-                                 </div>
-                                 <h3 class="events__title"><a href="event-details.html">ELK 활용 빅데이터, 자바, Spring 교육</a></h3>
-                              </div>
-                              <div class="events__more">
-                                 <a href="event-details.html" class="link-btn">
+                                 <a href="#" class="link-btn">
                                     View More
                                     <i class="far fa-arrow-right"></i>
                                     <i class="far fa-arrow-right"></i>
@@ -452,6 +423,40 @@
                            </div>
                         </div>
                      </div>
+                  </div>
+                  </c:forEach>
+               </div>
+
+               <!-- 4위부터 아래부분 -->
+               <br/>
+               <div class="container">
+                  
+                  <div class="row">
+                     <c:forEach items="${rankOther}" var="rankOther">
+                     <div class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+                        <div class="events__item mb-10 hover__active">
+                           <div class="events__item-inner d-sm-flex align-items-center justify-content-between white-bg" style="margin-left: -11%; margin-right: -11%;">
+                              <!-- 나중에 순위 메길것 -->
+                              <span><h4>4</h4></span>
+                              <!--sql 첫번쨰 인덱스를 출력, 해당 학원이름 -->
+                              <h3 class="events__title"><a href="#">${rankOther[0]}</a></h3>
+                              <div class="events__content">
+                                 <div class="events__meta">
+                                    <!--sql 첫번쨰 인덱스를 출력, 해당 학원 후기 평균낸점수 -->
+                                    <span><i class="icon_star"></i>&nbsp;&nbsp;${rankOther[3]}</span>
+                                 </div>
+                              </div>
+                              <div class="events__more">
+                                 <a href="#" class="link-btn">
+                                    View More
+                                    <i class="far fa-arrow-right"></i>
+                                    <i class="far fa-arrow-right"></i>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>   
+                     </c:forEach> 
                   </div>
                </div>
             </div>

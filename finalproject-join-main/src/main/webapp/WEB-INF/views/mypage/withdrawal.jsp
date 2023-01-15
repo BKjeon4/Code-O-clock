@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> <%@ taglib
-prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
   <head>
@@ -9,21 +9,22 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.png" />
     <!-- CSS here -->
-    <link rel="stylesheet" href="../assets/css/preloader.css" />
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/meanmenu.css" />
-    <link rel="stylesheet" href="../assets/css/animate.min.css" />
-    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.css" />
-    <link rel="stylesheet" href="../assets/css/backToTop.css" />
-    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="../assets/css/fontAwesome5Pro.css" />
-    <link rel="stylesheet" href="../assets/css/elegantFont.css" />
-    <link rel="stylesheet" href="../assets/css/default.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/wishlist.css" />
+    <link rel="stylesheet" href="/assets/css/preloader.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/meanmenu.css" />
+    <link rel="stylesheet" href="/assets/css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="/assets/css/backToTop.css" />
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="/assets/css/fontAwesome5Pro.css" />
+    <link rel="stylesheet" href="/assets/css/elegantFont.css" />
+    <link rel="stylesheet" href="/assets/css/default.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/wishlist.css" />
+    <link rel="stylesheet" href="/assets/css/onoff.css">
 
     <style>
       #accordionSidebar {
@@ -88,9 +89,9 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
       <div id="loading-center">
         <div id="loading-center-absolute">
           <div class="loading-content">
-            <img class="loading-logo-text" src="../assets/img/logo/logo-text-2.png" alt="" />
+            <img class="loading-logo-text" src="/assets/img/logo/logo-text-2.png" alt="" />
             <div class="loading-stroke">
-              <img class="loading-logo-icon" src="../assets/img/logo/logo-icon.png" alt="" />
+              <img class="loading-logo-icon" src="/assets/img/logo/logo-icon.png" alt="" />
             </div>
           </div>
         </div>
@@ -108,170 +109,198 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
 
     <!-- header area start -->
     <header>
-      <div
-        id="header-sticky"
-        class="header__area header__transparent header__padding header__white"
-      >
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
-              <div class="header__left d-flex">
-                <div class="logo">
-                  <a href="index">
-                    <img class="logo-white" src="../assets/img/logo/logo-2.png" alt="logo" />
-                    <img class="logo-black" src="../assets/img/logo/logo.png" alt="logo" />
-                  </a>
-                </div>
-                <div class="header__category d-none d-lg-block">
-                  <nav>
-                    <ul>
-                      <li>
-                        <a href="course-grid" class="cat-menu d-flex align-items-center">
-                          <div class="cat-dot-icon d-inline-block">
-                            <svg viewBox="0 0 276.2 276.2">
-                              <g>
-                                <g>
-                                  <path
-                                    class="cat-dot"
-                                    d="M33.1,2.5C15.3,2.5,0.9,17,0.9,34.8s14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S51,2.5,33.1,2.5z"
-                                  />
-                                  <path
-                                    class="cat-dot"
-                                    d="M137.7,2.5c-17.8,0-32.3,14.5-32.3,32.3s14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3S155.5,2.5,137.7,2.5    z"
-                                  />
-                                  <path
-                                    class="cat-dot"
-                                    d="M243.9,67.1c17.8,0,32.3-14.5,32.3-32.3S261.7,2.5,243.9,2.5S211.6,17,211.6,34.8S226.1,67.1,243.9,67.1z"
-                                  />
-                                  <path
-                                    class="cat-dot"
-                                    d="M32.3,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3S0,120.4,0,138.2S14.5,170.5,32.3,170.5z"
-                                  />
-                                  <path
-                                    class="cat-dot"
-                                    d="M136.8,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3c-17.8,0-32.3,14.5-32.3,32.3    C104.5,156.1,119,170.5,136.8,170.5z"
-                                  />
-                                  <path
-                                    class="cat-dot"
-                                    d="M243,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3s-32.3,14.5-32.3,32.3    C210.7,156.1,225.2,170.5,243,170.5z"
-                                  />
-                                  <path
-                                    class="cat-dot"
-                                    d="M33,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S50.8,209.1,33,209.1z    "
-                                  />
-                                  <path
-                                    class="cat-dot"
-                                    d="M137.6,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S155.4,209.1,137.6,209.1z"
-                                  />
-                                  <path
-                                    class="cat-dot"
-                                    d="M243.8,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S261.6,209.1,243.8,209.1z"
-                                  />
-                                </g>
-                              </g>
-                            </svg>
-                          </div>
-                          <span>Category</span>
+      <div id="header-sticky" class="header__area header__transparent header__padding header__white">
+         <div class="container-fluid">
+            <div class="row align-items-center">
+
+               <!--로고와 사이트 전환 이미지-->
+               <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
+                  <div class="header__left d-flex">
+                     <div class="logo">
+                        <a href="/startpage">
+                           <img src="/assets/img/logo/logo.png" alt="logo">
                         </a>
-                        <ul class="cat-submenu">
-                          <li><a href="course-details">English Learning</a></li>
-                          <li><a href="course-details">Web Development</a></li>
-                          <li><a href="course-details">Logo Design</a></li>
-                          <li><a href="course-details">Motion Graphics</a></li>
-                          <li><a href="course-details">Video Edition</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6">
-              <div class="header__right d-flex justify-content-end align-items-center">
-                <div class="main-menu main-menu-3">
-                  <nav id="mobile-menu">
-                    <ul>
-                      <li class="has-dropdown">
-                        <a href="index">Home</a>
-                        <ul class="submenu">
-                          <li><a href="index">Home Style 1</a></li>
-                          <li><a href="index-2">Home Style 2</a></li>
-                          <li><a href="index-3">Home Style 3</a></li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="course-grid">Courses</a>
-                        <ul class="submenu">
-                          <li><a href="course-grid">Courses</a></li>
-                          <li><a href="course-list">Course List</a></li>
-                          <li><a href="course-sidebar">Course sidebar</a></li>
-                          <li><a href="course-details">Course Details</a></li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="blog">Blog</a>
-                        <ul class="submenu">
-                          <li><a href="blog">Blog</a></li>
-                          <li><a href="blog-details">Blog Details</a></li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="course-grid">Pages</a>
-                        <ul class="submenu">
-                          <li><a href="about">About</a></li>
-                          <li><a href="instructor">Instructor</a></li>
-                          <li><a href="instructor-details">Instructor Details</a></li>
-                          <li><a href="event-details">Event Details</a></li>
-                          <li><a href="cart">My Cart</a></li>
-                          <li><a href="wishlist">My Wishlist</a></li>
-                          <li><a href="checkout">checkout</a></li>
-                          <li><a href="sign-in">Sign In</a></li>
-                          <li><a href="sign-up">Sign Up</a></li>
-                          <li><a href="error">Error</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact">Contact</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="header__search p-relative ml-50 d-none d-md-block">
-                  <form action="#">
-                    <input type="text" placeholder="Search..." />
-                    <button type="submit"><i class="fad fa-search"></i></button>
-                  </form>
-                  <div class="header__cart">
-                    <a href="javascript:void(0);" class="cart-toggle-btn">
-                      <div class="header__cart-icon">
-                        <svg viewBox="0 0 24 24">
-                          <circle class="st0" cx="9" cy="21" r="1" />
-                          <circle class="st0" cx="20" cy="21" r="1" />
-                          <path
-                            class="st0"
-                            d="M1,1h4l2.7,13.4c0.2,1,1,1.6,2,1.6h9.7c1,0,1.8-0.7,2-1.6L23,6H6"
-                          />
-                        </svg>
-                      </div>
-                      <span class="cart-item">2</span>
-                    </a>
+                     </div>
+                     <div class="header__category d-none d-lg-block">
+                        <nav>
+                           <ul>
+                              <li>
+                                 <a href="course-grid" class="cat-menu d-flex align-items-center">
+                                    <div class="cat-dot-icon d-inline-block">
+                                     
+                                       <input type="checkbox" id="switch" /><label class="onoff" for="switch">Toggle</label>
+
+                                    </div>
+                                
+                                 </a>
+                                 
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
                   </div>
-                </div>
-                <div class="header__btn ml-20 d-none d-sm-block">
-                  <a href="contact" class="e-btn">Try for free</a>
-                </div>
-                <div class="sidebar__menu d-xl-none">
-                  <div class="sidebar-toggle-btn ml-30" id="sidebar-toggle">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                  </div>
-                </div>
-              </div>
+               </div>
+
+               <!-- JSTL if : 로그인, 로그아웃된 상태 구분-->
+               <c:choose>
+                <c:when test="${empty sessionScope.memIdInt}">
+
+                     <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7 col-sm-6 col-6">
+                        <div class="eader__center align-items-center d-flex justify-content-center">
+                           <div class="main-menu main-menu-3">
+                              <nav id="mobile-menu">
+                                 <ul>
+                                    <li class="has-dropdown">
+                                       <a href="/about">About</a>
+                                       <ul class="submenu">
+                                          <li><a href="/about">소개</a></li>
+                                          <li><a href="/map">지도</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a>학원/화상</a>
+                                       <ul class="submenu">
+                                          <li><a href="/academy/course-sidebar">학원 목록</a></li>
+                                          <li><a href="/academy/rank">학원 랭크</a></li>
+                                          <li><a href="/lecture/tutor">선생님</a></li>
+                                          <li><a href="/lecture/lecture-sidebar">강의</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="honestAnswer">게시판</a>
+                                       <ul class="submenu">
+                                          <li><a href="/board/honestQuestionList">솔직 답변</a></li>
+                                          <li><a href="/board/codingBoard">코딩 게시판</a></li>
+                                          <li><a href="/board/newsList">뉴스</a></li>
+                                          <li><a href="/board/announcement">공지</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="/chatbot">챗봇</a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                           </div>
+                           <div class="header__search p-relative ml-50 d-none d-md-block">
+                              <form action="#">
+                                 <input type="text" placeholder="Search...">
+                                 <button type="submit"><i class="fad fa-search"></i></button>
+                              </form>
+                              <div class="header__cart">
+                                 <a href="javascript:void(0);" class="cart-toggle-btn">
+                                    <div class="header__cart-icon">
+                                       <svg viewBox="0 0 24 24">
+                                          <circle class="st0" cx="9" cy="21" r="1"/>
+                                          <circle class="st0" cx="20" cy="21" r="1"/>
+                                          <path class="st0" d="M1,1h4l2.7,13.4c0.2,1,1,1.6,2,1.6h9.7c1,0,1.8-0.7,2-1.6L23,6H6"/>
+                                       </svg>
+                                    </div>
+                                    <span class="cart-item">2</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="header__btn ml-20 d-none d-sm-block">
+                              <a href="/sign-in" class="e-btn">로그인</a>
+                           </div>
+                           <div class="sidebar__menu d-xl-none">
+                              <div class="sidebar-toggle-btn ml-30" id="sidebar-toggle">
+                                 <span class="line"></span>
+                                 <span class="line"></span>
+                                 <span class="line"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </c:when>
+                  <c:when test="${not empty sessionScope.memIdInt}">
+
+                     <div class="col-xxl-9 col-xl-9 col-lg-6 col-md-7 col-sm-6 col-6">
+                        <div class="eader__center align-items-center d-flex justify-content-center">
+                           <div class="main-menu main-menu-3">
+                              <nav id="mobile-menu">
+                                 <ul>
+                                    <li class="has-dropdown">
+                                       <a href="/about">About</a>
+                                       <ul class="submenu">
+                                          <li><a href="/about">소개</a></li>
+                                          <li><a href="/map">지도</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a>학원/화상</a>
+                                       <ul class="submenu">
+                                          <li><a href="/academy/course-sidebar">학원 목록</a></li>
+                                          <li><a href="/academy/rank">학원 랭크</a></li>
+                                          <li><a href="/lecture/tutor">선생님</a></li>
+                                          <li><a href="/lecture/lecture-sidebar">강의</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a>게시판</a>
+                                       <ul class="submenu">
+                                          <li><a href="/board/honestQuestionList">솔직 답변</a></li>
+                                          <li><a href="/board/codingBoard">코딩 게시판</a></li>
+                                          <li><a href="/board/newsList">뉴스</a></li>
+                                          <li><a href="/board/announcement">공지</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="/chatbot">챗봇</a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                           </div>
+                           <!-- 0103 찬주2
+                              메인화면에서의 검색기능과 동일한 부분 
+                           -->
+
+                           <div class="header__search p-relative ml-50 d-none d-md-block">
+
+                              <form id = "main" action=/academy/course-sidebar method="GET">
+                                 <input type="text" name ="keywords"  placeholder="ex)교육과정 및 학원이름 검색">
+                                 <button type="submit"><i class="fad fa-search"></i></button>
+                              </form>
+                              <!-- 검색 끝-->
+
+
+
+
+                              <div class="header__cart">
+                                 <a href="javascript:void(0);" class="cart-toggle-btn">
+                                    <div class="header__cart-icon">
+                                       <svg viewBox="0 0 24 24">
+                                          <circle class="st0" cx="9" cy="21" r="1"/>
+                                          <circle class="st0" cx="20" cy="21" r="1"/>
+                                          <path class="st0" d="M1,1h4l2.7,13.4c0.2,1,1,1.6,2,1.6h9.7c1,0,1.8-0.7,2-1.6L23,6H6"/>
+                                       </svg>
+                                    </div>
+                                    <span class="cart-item">2</span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="header__btn ml-20 d-none d-sm-block">
+                              <a href="logoutMember" class="e-btn">로그아웃</a>
+                           </div>
+                           <div class="sidebar__menu d-xl-none">
+                              <div class="sidebar-toggle-btn ml-30" id="sidebar-toggle">
+                                 <span class="line"></span>
+                                 <span class="line"></span>
+                                 <span class="line"></span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </c:when>
+         </c:choose>
+               <!-- JSTL c:when 끝-->
+
             </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </header>
-    <!-- header area end -->
+   </header>
+   <!-- header area end -->
 
     <!-- cart mini area start -->
     <div class="cartmini__area">
@@ -288,7 +317,7 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
               <li>
                 <div class="cartmini__thumb">
                   <a href="#">
-                    <img src="../assets/img/course/sm/cart-1.jpg" alt="" />
+                    <img src="/assets/img/course/sm/cart-1.jpg" alt="" />
                   </a>
                 </div>
                 <div class="cartmini__content">
@@ -307,7 +336,7 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
               <li>
                 <div class="cartmini__thumb">
                   <a href="#">
-                    <img src="../assets/img/course/sm/cart-2.jpg" alt="" />
+                    <img src="/assets/img/course/sm/cart-2.jpg" alt="" />
                   </a>
                 </div>
                 <div class="cartmini__content">
@@ -326,7 +355,7 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
               <li>
                 <div class="cartmini__thumb">
                   <a href="#">
-                    <img src="../assets/img/course/sm/cart-3.jpg" alt="" />
+                    <img src="/assets/img/course/sm/cart-3.jpg" alt="" />
                   </a>
                 </div>
                 <div class="cartmini__content">
@@ -372,7 +401,7 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
         <div class="sidebar__content">
           <div class="logo mb-40">
             <a href="index">
-              <img src="../assets/img/logo/logo.png" alt="logo" />
+              <img src="/assets/img/logo/logo.png" alt="logo" />
             </a>
           </div>
           <div class="mobile-menu fix"></div>
@@ -409,7 +438,7 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
       <!-- page title area start -->
       <section
         class="page__title-area page__title-height page__title-overlay d-flex align-items-center"
-        data-background="../assets/img/page-title/page-title-2.jpg"
+        data-background="/assets/img/page-title/page-title-2.jpg"
       >
         <div class="container">
           <div class="row">
@@ -433,7 +462,7 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
       
       <section class="cart-area pt-100 pb-100">
          <div class="accounthead">
-            <h4>회원정보 수정</h4>
+            <h4>회원 탈퇴</h4>
          </div>
         <div class="container">
          
@@ -462,8 +491,8 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
                       data-parent="#accordionSidebar"
                     >
                       <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="academyList">회원정보 수정</a><br />
-                        <a class="collapse-item" href="admin/academyRegister">회원 탈퇴</a>
+                        <a class="collapse-item" href="/mypage/modify">회원정보 수정</a><br />
+                        <a class="collapse-item" href="/mypage/withdrawal">회원 탈퇴</a>
                       </div>
                     </div>
                   </li>
@@ -486,11 +515,11 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
                       data-parent="#accordionSidebar"
                     >
                       <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="academyList">리뷰관리</a><br />
-                        <a class="collapse-item" href="admin/academyRegister">1:1문의</a><br />
-                        <a class="collapse-item" href="admin/academyRegister">코딩게시판</a><br />
-                        <a class="collapse-item" href="admin/academyRegister">솔직답변</a><br />
-                        <a class="collapse-item" href="admin/academyRegister">학원 탈퇴</a>
+                        <a class="collapse-item" href="/mypage/myreview">리뷰관리</a><br />
+                        <a class="collapse-item" href="">1:1문의</a><br />
+                        <a class="collapse-item" href="">코딩게시판</a><br />
+                        <a class="collapse-item" href="/mypage/myquestion">솔직답변</a><br />
+                        <a class="collapse-item" href="">학원 탈퇴</a>
                       </div>
                     </div>
                   </li>
@@ -505,32 +534,39 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
                     >
                       <i class="fas fa-heart"></i> <span>WishList</span>
                     </a>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                      <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="/mypage/wishlistaca">관심학원리스트</a><br/> 
+                        <a class="collapse-item" href="/mypage/wishlistlec">관심강의리스트</a>
+                      </div>
+                    </div>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link collapsed"
                       href="admin/lectureList.do"
                       data-toggle="collapse"
-                      data-target="#collapseThree"
+                      data-target="#collapseFour"
                       aria-expanded="true"
-                      aria-controls="collapseThree"
+                      aria-controls="collapseFour"
                     >
                       <i class="fas fa-fw fa-desktop"></i> <span>나의 학습</span>
                     </a>
                     <div
-                      id="collapseThree"
+                      id="collapseFour"
                       class="collapse"
                       aria-labelledby="headingUtilities"
                       data-parent="#accordionSidebar"
                     >
                       <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin/lectureList.do">강의 관리</a><br />
+                        <a class="collapse-item" href="/mypage/lessonreserve">예약 현황</a><br />
+                        <a class="collapse-item" href="/mypage/lessonbox">수업함</a>
                       </div>
                     </div>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="admin/member.do">
+                    <a class="nav-link" href="/mypage">
                       <i class="fas fa-fw fa-table"></i> <span>튜터등록</span>
                     </a>
                   </li>
@@ -541,131 +577,59 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
             </div>
 
             <!-- 메인 표-->
-            <div class="col-sm-9">              
-              <form class="myaccount" action="#">             
-                        
+            <div class="col-sm-9">   
+              <!-- bk 비밀번호 확인 & 회원탈퇴 버튼 액션-->
+               <form class="myaccount" method="post" id="memberDelete" action="memberDelete">
                             <div class="sign__wrapper white-bg">                               
                                 
                                 <div class="sign__form">
-                                    <!-- bk 회원가입 버튼 액션-->
-                                    <form method="post" id="modifyForm" action="modifyForm">
-                                        <div class="sign__input-wrapper mb-25">
-                                            <h5>아이디</h5>
-                                            <div class="sign__input">
-                                                <input
-                                                 type="text" 
-                                                 placeholder="ID" 
-                                                 id="memIdString" 
-                                                 name="memIdString"
-                                                 required
-                                                 tabindex="1"
-                                                 aria-required="true"
-                                                 readonly
-                                                 value="${userInfo.memIdString}"
-                                                 />                                                
-                                                <i class="fal fa-user"></i>                                                
-                                            </div>                                      
-                                            
-                                        </div>
+                                    
+                                  <input type="hidden" name="memIdInt" value="${sessionScope.memIdInt}">
                                         
-                                        <div class="sign__input-wrapper mb-25">
-                                          <h5>비밀번호</h5>
-                                          <div class="sign__input">
-                                              <input type="password"
-                                              placeholder="Password"
-                                              id="m_pass"
-                                              name="memPass"
-                                              required
-                                              tabindex="2"
-                                              aria-required="true"
-                                              />
-                                              <i class="fal fa-lock"></i>
-                                          </div>                                          
-                                      </div>
-
-                                        <div class="sign__input-wrapper mb-25">
-                                            <h5>이름</h5>
-                                            <div class="sign__input">
-                                                <input type="text"
-                                                placeholder="Full name" 
-                                                id="m_name" 
-                                                name="memName" 
-                                                required
-                                                tabindex="3"
-                                                value=""
-                                                aria-required="true"
-                                                />
-                                                <i class="fal fa-user"></i>
-                                            </div>                                            
+                                      <div class="sign__input-wrapper mb-25">
+                                        <h5>비밀번호</h5>
+                                        <div class="sign__input">
+                                            <input type="password" 
+                                            placeholder="Password" 
+                                            id="m_pass" 
+                                            name="memPass" 
+                                            required
+                                            tabindex="1"
+                                            aria-required="true"
+                                            value=""
+                                            />
+                                            <i class="fal fa-lock"></i>
                                         </div>
 
-                                        <div class="sign__input-wrapper mb-25">
-                                            <h5>폰 번호</h5>
-                                            <div class="sign__input">
-                                                <input type="tel" 
-                                                placeholder="Phone number" 
-                                                id="m_tel" 
-                                                name="memTel" 
-                                                required
-                                                tabindex="4"
-                                                value=""
-                                                aria-required=""
-                                                />
-                                                <i class="fal fa-phone"></i>
-                                            </div>                                            
-                                        </div>
+                                    </div>
 
-                                        <div class="sign__input-wrapper mb-25">
-                                            <h5>이메일</h5>
-                                            <div class="sign__input">
-                                                <input type="email" 
-                                                placeholder="E-mail address" 
-                                                id="m_email" 
-                                                name="memEmail" 
-                                                required
-                                                tabindex="5"
-                                                value=""
-                                                aria-required="true"
-                                                />
-                                                <i class="fal fa-envelope"></i>
-                                            </div>                                            
+                                    <div class="sign__input-wrapper mb-10">
+                                        <h5>비밀번호 확인</h5>
+                                        <div class="sign__input">
+                                            <input type="password" 
+                                            placeholder="Re-Password" 
+                                            id="m_pass_ck"
+                                            required
+                                            tabindex="2"
+                                            aria-required="true"
+                                            value=""
+                                            />
+                                            <i class="fal fa-lock"></i>
                                         </div>
+                                        <!-- 유효성검사 js 연결(비밀번호 확인)-->
+                                        <p id="chkNotice3" size="2"></p>
+                                    </div>
 
-                                        <div class="sign__input-wrapper mb-25">
-                                            <h5>우편 번호</h5>
-                                            <div class="sign__input">
-                                                <!-- onclick 을 통해서 주소 찾기 api 가능-->
-                                                <input type="text" placeholder="Postal code" id="m_post" name="m_post"  onclick="findAddress()"  readonly  required/>
-                                                <i class="fal fa-location"></i>
-                                            </div>
-                                        </div>
 
-                                        <div class="sign__input-wrapper mb-25">
-                                            <h5>주소</h5>
-                                            <div class="sign__input">
-                                                <input type="text" placeholder="Address" id="m_addr" name="m_addr" required/>
-                                                <i class="fal fa-location-arrow"></i>
-                                            </div>
-                                        </div>
-                                        <div class="sign__input-wrapper mb-25">
-                                            <h5>상세 주소</h5>
-                                            <div class="sign__input">
-                                                <input type="text" placeholder="Detailed address" id="m_addr_sub" name="m_addr_sub" required/>
-                                                <i class="fal fa-location-arrow"></i>
-
-                                            </div>
-                                        </div>
 
                                 
 
                                         <div class="sign__action d-flex justify-content-between mb-30">
                                             
                                         </div>
-                                        <button class="e-btn w-100" type="submit" id="modifyBtn" name="modifyBtn"><span></span> 수정하기 </button>
-                                        <div class="sign__new text-center mt-20">
-                                            <p>탈퇴를 원하신다면 ? <a href="sign-in"> 탈퇴하기 </a></p>
-                                        </div>
-                                    </form>
+                                        <button class="e-btn w-100" type="submit" id="modifyBtn" name="modifyBtn"><span></span> 탈퇴하기 </button>
+
+                                    
                                 </div>
                             </div>
                         </div>
@@ -689,7 +653,7 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
                   <div class="footer__widget-head mb-22">
                     <div class="footer__logo">
                       <a href="index">
-                        <img src="../assets/img/logo/logo-2.png" alt="" />
+                        <img src="/assets/img/logo/logo-2.png" alt="" />
                       </a>
                     </div>
                   </div>
@@ -797,24 +761,26 @@ prefix='c' uri="http://java.sun.com/jsp/jstl/core"%>
     </footer>
     <!-- footer area end -->
     <!-- JS here -->
-    <script src="../assets/js/vendor/jquery-3.5.1.min.js"></script>
-    <script src="../assets/js/vendor/waypoints.min.js"></script>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/jquery.meanmenu.js"></script>
-    <script src="../assets/js/swiper-bundle.min.js"></script>
-    <script src="../assets/js/owl.carousel.min.js"></script>
-    <script src="../assets/js/jquery.fancybox.min.js"></script>
-    <script src="../assets/js/isotope.pkgd.min.js"></script>
-    <script src="../assets/js/parallax.min.js"></script>
-    <script src="../assets/js/backToTop.js"></script>
-    <script src="../assets/js/jquery.counterup.min.js"></script>
-    <script src="../assets/js/ajax-form.js"></script>
-    <script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/wishList.js"></script>
+    <script src="/assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="/assets/js/vendor/waypoints.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/jquery.meanmenu.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/jquery.fancybox.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/parallax.min.js"></script>
+    <script src="/assets/js/backToTop.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/ajax-form.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/wishList.js"></script>
+    <script src="/assets/js/sign-up.js"></script>
+    <script src="/assets/js/withdrawal.js"></script>
     <!--0106 좋아요 버튼 관련 ajax-->
     <!-- Bootstrap core JavaScript-->
-    <script src="../admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

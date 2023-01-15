@@ -4282,3 +4282,734 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.eclipse.lsp4e 1 0 2023-01-12 11:28:49.433
 !MESSAGE [Info]	No ES Libary found for file: file:///D:/Code%20O'clock/finalproject-join-main/src/main/resources/static/assets/js/vendor/waypoints.min.js
+!SESSION 2023-01-13 10:29:45.235 -----------------------------------------------
+eclipse.buildId=4.17.0.202212060857
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-13 10:29:47.352
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-13 10:29:52.428
+!MESSAGE Logback config file: D:\Code O'clock\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-01-13 10:29:59.771
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-13 10:29:59.771
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-13 10:29:59.771
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-13 10:30:04.254
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kosmo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2023-01-13 10:30:06.660
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jface 2 0 2023-01-13 12:15:42.873
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-13 12:15:42.873
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-01-13 17:18:20.500
+!MESSAGE executing callback sts4.classpath.zWMmKJDu FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-01-13 17:18:20.500
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2023-01-14 16:22:16.442 -----------------------------------------------
+eclipse.buildId=4.17.0.202212060857
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-14 16:22:18.643
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-14 16:22:53.640
+!MESSAGE Logback config file: D:\Code O'clock\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-01-14 16:23:01.257
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-14 16:23:01.257
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-14 16:23:01.257
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-14 16:23:05.555
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kosmo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 2 0 2023-01-14 16:27:53.281
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-14 16:27:53.281
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2023-01-15 15:59:43.212 -----------------------------------------------
+eclipse.buildId=4.17.0.202212060857
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-15 15:59:45.321
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-15 15:59:50.307
+!MESSAGE Logback config file: D:\Code O'clock\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-01-15 15:59:57.791
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-15 15:59:57.791
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-15 15:59:57.791
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-15 16:00:02.632
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kosmo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2023-01-15 16:06:53.374
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jface 2 0 2023-01-15 16:07:32.874
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-15 16:07:32.874
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-01-15 16:48:58.523
+!MESSAGE [Info]	ESLint server running in node v18.12.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-01-15 16:48:58.556
+!MESSAGE [Info]	No ES Libary found for file: file:///D:/Code%20O'clock/finalproject-join-main/src/main/resources/static/assets/js/findIdPw.js
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-01-15 16:48:59.718
+!MESSAGE [Info]	[lspserver] Using Typescript version (bundled) 4.9.3 from path "D:\sts-4.17.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.0.1.202211171559\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-01-15 16:49:00.483
+!MESSAGE Could not get hover region due to timeout after 500 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:152)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-01-15 16:49:00.998
+!MESSAGE Could not get hover information due to timeout after 500 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-01-15 16:55:03.302
+!MESSAGE [Info]	No ES Libary found for file: file:///D:/Code%20O'clock/finalproject-join-main/src/main/resources/static/assets/js/withdrawal.js
+
+!ENTRY org.eclipse.lsp4e 1 0 2023-01-15 17:32:16.824
+!MESSAGE [Info]	No ES Libary found for file: file:///D:/Code%20O'clock/finalproject-join-main/src/main/resources/static/assets/js/search.js
+!SESSION 2023-01-15 21:04:35.965 -----------------------------------------------
+eclipse.buildId=4.17.0.202212060857
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-15 21:04:36.751
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-01-15 21:04:39.216
+!MESSAGE Logback config file: D:\Code O'clock\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.1.0.20221015-0744.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-01-15 21:04:40.502
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-15 21:04:40.502
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-15 21:04:40.502
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-15 21:04:43.069
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\kosmo'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.088
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.099
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.117
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.130
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.144
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.153
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.165
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.179
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.192
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.201
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.211
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.223
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.239
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.252
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.264
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.277
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.292
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.302
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.312
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.321
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.331
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.345
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.358
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.371
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.386
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.402
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.412
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.423
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.436
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.448
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.454
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.463
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.470
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.486
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.498
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.513
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.540
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.551
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.563
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.570
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.581
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.594
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.607
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.618
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.625
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.634
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.640
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.653
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.675
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.687
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.697
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.711
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.722
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.735
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.752
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.765
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.773
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.782
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.790
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.801
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.810
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.825
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.834
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.844
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.853
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.859
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.864
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.871
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.884
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.892
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.900
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.911
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.920
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.929
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.937
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.946
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.957
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.971
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.981
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:54.996
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.010
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.023
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.030
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.038
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.046
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.051
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.057
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.067
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.076
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.088
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.098
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.107
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.116
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.127
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.138
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.143
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.149
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.158
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.166
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.178
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.184
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.193
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.204
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.212
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.219
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.227
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.237
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2023-01-15 21:04:55.250
+!MESSAGE C:\Users\kosmo\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar is not on its project's build path
+
+!ENTRY org.eclipse.jface 2 0 2023-01-15 21:04:56.152
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-01-15 21:04:56.152
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2023-01-15 21:05:18.778
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
