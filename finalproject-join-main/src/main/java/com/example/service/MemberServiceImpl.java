@@ -20,7 +20,6 @@ import javax.mail.Session;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import javax.net.ssl.HttpsURLConnection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -154,7 +153,7 @@ public class MemberServiceImpl implements MemberService {
       try {
          URL url = new URL(reqURL);
 
-         HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
          // POST 요청을 위해 기본값이 false인 setDoOutput을 true로
 
          conn.setRequestMethod("POST");
@@ -166,7 +165,7 @@ public class MemberServiceImpl implements MemberService {
          sb.append("grant_type=authorization_code");
 
          sb.append("&client_id=ed05f17a60ce1cf99ab3e4539248dbbf"); // 본인이 발급받은 key
-         sb.append("&redirect_uri=https://localhost:8080/kakaoLogin"); // 본인이 설정한 주소
+         sb.append("&redirect_uri=http://localhost:8080/kakaoLogin"); // 본인이 설정한 주소
 
          sb.append("&code=" + code);
          bw.write(sb.toString());
@@ -214,7 +213,7 @@ public class MemberServiceImpl implements MemberService {
 
       try {
          URL url = new URL(reqURL);
-         HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
          conn.setRequestMethod("GET");
 
          // 요청에 필요한 Header에 포함될 내용

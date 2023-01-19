@@ -1,3 +1,13 @@
+$(document).ready(function() {
+	$('#modifyBtn').click(function() {
+		
+	})
+})
+
+
+
+
+
 $(function() {
 	$("#modifyBtn").click(function() {
 		var param = $('#pwForm').serialize();

@@ -99,6 +99,8 @@
 		}
 	});
 
+	
+
 	////////////////////////////////////////////////////
     // 07. Data Background Js
 	$("[data-background").each(function () {

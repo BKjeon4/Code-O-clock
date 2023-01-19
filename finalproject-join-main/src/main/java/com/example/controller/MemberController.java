@@ -59,6 +59,7 @@ public class MemberController {
          System.out.println("로그인 성공**** : " + result);
          session.setAttribute("memIdInt", result.getMemIdInt());
          session.setAttribute("memIdString", result.getMemIdString());
+         session.setAttribute("memEmail", result.getMemEmail());
          
          return "redirect:/academy/index";
       }else{ // 로그인 실패

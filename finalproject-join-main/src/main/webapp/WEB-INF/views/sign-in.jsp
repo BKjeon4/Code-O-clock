@@ -110,7 +110,7 @@
                                           </ul>
                                        </li>
                                        <li class="has-dropdown">
-                                          <a>학원/화상</a>
+                                          <a href="course-grid">학원/화상</a>
                                           <ul class="submenu">
                                              <li><a href="/academy/course-sidebar">학원 목록</a></li>
                                              <li><a href="/academy/rank">학원 랭크</a></li>
