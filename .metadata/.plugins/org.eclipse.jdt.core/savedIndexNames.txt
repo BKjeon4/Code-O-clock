@@ -36,7 +36,6 @@ INDEX VERSION 1.131+D:\Code O'clock\.metadata\.plugins\org.eclipse.jdt.core
 1082251446.index
 2926500577.index
 3474734920.index
-1769050641.index
 626096582.index
 1956964240.index
 988793326.index

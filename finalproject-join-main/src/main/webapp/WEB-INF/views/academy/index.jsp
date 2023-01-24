@@ -108,12 +108,8 @@
                                  <div class="main-menu main-menu-3">
                                     <nav id="mobile-menu">
                                        <ul>
-                                          <li class="has-dropdown">
-                                             <a href="about">About</a>
-                                             <ul class="submenu">
-                                                <li><a href="/about">로고 소개</a></li>
-                                                <li><a href="/map">지도</a></li>
-                                             </ul>
+                                          <li>
+                                             <a href="/aboutus">AboutUs</a>
                                           </li>
                                           <li class="has-dropdown">
                                              <a href="course-grid">학원</a>
@@ -241,7 +237,7 @@
                                        </div>
                                  </div>  -->
 
-                                 <!--마이페잉지-->
+                                 <!--마이페이지-->
                                  <div class="header__category d-none d-lg-block">
                                     <nav>
                                        <ul>
@@ -261,7 +257,7 @@
                                                 <li class="sy" style="margin-left: 10px">${sessionScope.memEmail}</li>
                                                 <hr>
                                                 <li><a href="../mypage/modify">마이페이지</a></li>
-                                                <li><a href="course-details">병욱바보</a></li>
+                                                <li><a href="course-details">나의강의</a></li>
                                                 <li><a href="course-details">bk바보</a></li>
                                                 <li><a href="course-details">바보바보</a></li>
                                                 <li><a href="/logoutMember">로그아웃</a></li>
