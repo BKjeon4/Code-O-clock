@@ -112,10 +112,12 @@
                                              <a href="/aboutus">AboutUs</a>
                                           </li>
                                           <li class="has-dropdown">
-                                             <a href="course-grid">학원</a>
+                                             <a href="course-grid">학원/강의</a>
                                              <ul class="submenu">
                                                 <li><a href="/academy/course-sidebar">학원 목록</a></li>
                                                 <li><a href="/academy/rank">학원 랭크</a></li>
+                                                <li><a href="/lecture/tutor">튜터 목록</a></li>
+                                                <li><a href="/lecture/lecture-sidebar">강의 목록</a></li>
                                              </ul>
                                           </li>
                                           <li class="has-dropdown">
@@ -176,10 +178,12 @@
                                              <a href="/aboutus">AboutUs</a>
                                           </li>
                                           <li class="has-dropdown">
-                                             <a href="course-grid">학원</a>
+                                             <a href="course-grid">학원/강의</a>
                                              <ul class="submenu">
-                                                <li><a href="/academy/course-sidebar">학원 목록</a></li>
-                                                <li><a href="/academy/rank">학원 랭크</a></li>
+                                                   <li><a href="/academy/course-sidebar">학원 목록</a></li>
+                                                   <li><a href="/academy/rank">학원 랭크</a></li>
+                                                   <li><a href="/lecture/tutor">튜터 목록</a></li>
+                                                   <li><a href="/lecture/lecture-sidebar">강의 목록</a></li>
                                              </ul>
                                           </li>
                                           <li class="has-dropdown">
